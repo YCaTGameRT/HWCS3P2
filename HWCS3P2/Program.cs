@@ -19,6 +19,7 @@ namespace HWCS3P2 {
             FVolume = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите издательство\n>>: ");
             FPublisher = Console.ReadLine();
+            Console.Write("\n");
             FeaturesBooks FBook = new FeaturesBooks(FName, FAuthor, FYear, FVolume, FPublisher);
 
             string MName, MAuthor, MPublisher;
@@ -33,6 +34,7 @@ namespace HWCS3P2 {
             MVolume = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите издательство\n>>: ");
             MPublisher = Console.ReadLine();
+            Console.Write("\n");
             MethodBooks MBook = new MethodBooks(MName, MAuthor, MYear, MVolume, MPublisher);
 
             string name, author, publisher;
@@ -47,10 +49,12 @@ namespace HWCS3P2 {
             volume = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите издательство\n>>: ");
             publisher = Console.ReadLine();
+            Console.Write("\n");
             MethodBooks IDKBook = new MethodBooks(name, author, year, volume, publisher);
 
-            FBook.Information();
-            MBook.Information();
+            Console.Write(FBook.Information() + "\n");
+            Console.Write(MBook.Information() + "\n");
+            Console.Write("\n");
 
             FBook.Name = "Who";
             //FBook.Author = "Am";
@@ -67,12 +71,16 @@ namespace HWCS3P2 {
             Console.Write(FBook.Year + "\n");
             Console.Write(FBook.Volume + "\n");
             Console.Write(FBook.Publisher + "\n");
+            Console.Write("\n");
 
             Console.Write(MBook.GetName() + "\n");
             Console.Write(MBook.GetAuthor() + "\n");
             Console.Write(MBook.GetYear() + "\n");
             Console.Write(MBook.GetVolume() + "\n");
             Console.Write(MBook.GetPublisher() + "\n");
+            Console.Write("\n");
+
+            Console.ReadKey();
         }
     }
 }
