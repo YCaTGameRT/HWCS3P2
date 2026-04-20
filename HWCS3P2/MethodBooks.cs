@@ -14,7 +14,7 @@ namespace HWCS3P2 {
             _author = author;
             SetYear(year);
             SetVolume(volume);
-            SetPublisher(publisher);
+            _publisher = publisher;
         }
 
         public void SetName(string name) {
@@ -42,9 +42,6 @@ namespace HWCS3P2 {
             return _volume;
         }
 
-        private void SetPublisher(string publisher) {
-            _publisher = publisher;
-        }
         public string GetPublisher() {
             return _publisher;
         }

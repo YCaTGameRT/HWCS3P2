@@ -32,7 +32,7 @@ namespace HWCS3P2 {
             get { return _volume; }
             set { _volume = value; }
         }
-        public string Publisher { get; private set; }
+        public string Publisher { get; }
 
         public string Information() {
             return "Название: " + _name + "; атор: " + _author + "; год выпуска: " + _year + "; объем в листах: " + _volume + "; издательство: " + Publisher;
